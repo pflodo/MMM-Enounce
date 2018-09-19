@@ -1,13 +1,13 @@
 /* global Module */
 
 /* Magic Mirror
- * Module: MMM-syslog
+ * Module: MMM-Enounce
  *
- * By Paul-Vincent Roll http://paulvincentroll.com
+ * Forked from Module MMM-syslog By Paul-Vincent Roll http://paulvincentroll.com
  * MIT Licensed.
  */
 
-Module.register('MMM-syslog',{
+Module.register('MMM-Enounce',{
 
 	messages: [],
 
