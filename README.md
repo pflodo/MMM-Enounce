@@ -9,20 +9,34 @@ Notification API Module for MagicMirror<sup>2</sup>
   * An installation of [MagicMirror<sup>2</sup>](https://github.com/MichMich/MagicMirror)
 
 ## Installation
- 1. Clone this repo into `~/MagicMirror/modules` directory.
- 2. Configure your `~/MagicMirror/config/config.js`:
+ Clone this repo:
+    ````
+    cd ~/MagicMirror/modules
+    git clone https://github.com/pflodo/MMM-Enounce.git
+    ```` 
+ Configure your `~/MagicMirror/config/config.js`:
 
-    ```
-    {
-        module: 'MMM-Enounce',
-        position: 'top_right',
-        config: {
-            ...
-        }
-    }
-    ```
+## Update
+
+````
+cd ~/MagicMirror/modules/MMM-Enounce
+git pull
+````
 
 ## Config Options
+
+````
+modules: [
+	{
+		module: 'MMM-Enounce',
+		position: 'top_center', // This can be any of the regions.
+		config: {
+   title: "Alerts:"
+			max: 5,
+		},
+	},
+]
+````
 | **Option** | **Default** | **Description** |
 | --- | --- | --- |
 | `max` | `5` | How many messages should be displayed on the screen. |
