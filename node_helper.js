@@ -1,9 +1,9 @@
 /* global Module */
 
 /* Magic Mirror
- * Module: MMM-syslog
+ * Module: MMM-Enounce
  *
- * By Paul-Vincent Roll http://paulvincentroll.com
+ * Forked from Module MMM-syslog By Paul-Vincent Roll http://paulvincentroll.com
  * MIT Licensed.
  */
 
@@ -14,7 +14,7 @@ const fs = require("fs");
 module.exports = NodeHelper.create({
 
 	start: function() {
-		this.expressApp.get('/syslog', (req, res) => {
+		this.expressApp.get('/enounce', (req, res) => {
 
 			var query = url.parse(req.url, true).query;
 			var message = query.message;
